@@ -7,7 +7,8 @@ let dinMessage;
 function getDate() {
     const date = new Date();
     var time = date.getHours();
-    if (time <= 6 && time >= 21) {
+    console.log(time);
+    if (time <= 6 || time >= 21) {
         dinMessage = "It's night  time";
         message.style.backgroundColor = "black";
         message.style.color = "white";
